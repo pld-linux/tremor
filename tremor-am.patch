@@ -1,0 +1,11 @@
+--- Tremor/configure.in.orig	2013-04-12 16:54:21.000000000 +0200
++++ Tremor/configure.in	2013-04-12 17:08:26.981455220 +0200
+@@ -9,7 +9,7 @@
+ AC_CANONICAL_HOST
+ AC_CANONICAL_TARGET
+ 
+-AM_CONFIG_HEADER([config.h])
++AC_CONFIG_HEADERS([config.h])
+ 
+ AM_INIT_AUTOMAKE(libvorbisidec,1.2.1)
+ 
