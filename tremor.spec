@@ -1,4 +1,4 @@
-%define	rel	1
+%define	rel	2
 Summary:	Tremor - integer Ogg Vorbis library
 Summary(pl.UTF-8):	Tremor - biblioteka Ogg Vorbis operująca na liczbach całkowitych
 Name:		tremor
