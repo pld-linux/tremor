@@ -1,15 +1,15 @@
-%define	rel	2
 Summary:	Tremor - integer Ogg Vorbis library
 Summary(pl.UTF-8):	Tremor - biblioteka Ogg Vorbis operująca na liczbach całkowitych
 Name:		tremor
-%define	snap	20130405
 Version:	1.2.1
+%define	snap	20150106
+%define	rel	1
 Release:	0.%{snap}.%{rel}
 License:	BSD
 Group:		Libraries
-# svn checkout http://svn.xiph.org/trunk/Tremor/
-Source0:	%{name}.tar.xz
-# Source0-md5:	24b82591f1f711fe3dbc436f2dffb7e7
+# git clone https://git.xiph.org/tremor.git
+Source0:	%{name}-%{snap}.tar.xz
+# Source0-md5:	3bab6a59340b735e2e00d7a81b4a0184
 Patch0:		%{name}-am.patch
 URL:		http://xiph.org/vorbis/
 BuildRequires:	autoconf
@@ -66,7 +66,7 @@ Static Tremor library.
 Statyczna biblioteka Tremor.
 
 %prep
-%setup -q -n Tremor
+%setup -q -n tremor
 %patch0 -p1
 
 %build
